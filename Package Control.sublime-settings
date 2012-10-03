@@ -1,0 +1,36 @@
+{
+	"auto_upgrade_last_run": 1349192622,
+	"installed_packages":
+	[
+		"Additional PHP Snippets",
+		"AdvancedNewFile",
+		"Alignment",
+		"ApacheConf.tmLanguage",
+		"Blade Snippets",
+		"BracketHighlighter",
+		"Case Conversion",
+		"CSSLint",
+		"FilezillaImport",
+		"HTML5",
+		"INI",
+		"jQuery",
+		"jQuery Snippets pack",
+		"JsFormat",
+		"JsMinifier",
+		"Laravel-Blade",
+		"LESS",
+		"LESS-build",
+		"LoremPixel",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Placeholders",
+		"Prefixr",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Tag",
+		"Terminal",
+		"Twitter Bootstrap Snippets",
+		"ZenCoding"
+	]
+}

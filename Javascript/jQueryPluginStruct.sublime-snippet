@@ -1,0 +1,31 @@
+<snippet>
+	<content><![CDATA[(function(\$, window, document, undefined) \{
+	
+	var ${1:ObjName} = \{
+		init: function(options,elem) \{
+			var self = this;
+			self.elem = elem;
+			self.\$elem = \$(elem);
+
+			self.options = \$.extend(\{\}, \$.fn.${2:PluginName}.options, options);
+		\}
+	\};
+
+
+	\$.fn.$2 = function(options) \{
+		return this.each(function () \{
+			var obj = Object.create($1);
+			obj.init(options,this);
+			\$.data(this,'$2',obj);
+		\});
+	\};
+
+	\$.fn.$2.options = \{
+
+	\};
+\})(jQuery, window, document);]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>jqp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

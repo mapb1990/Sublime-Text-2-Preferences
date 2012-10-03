@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[// .create() polyfill
+if(typeof Object.create() !== 'function') \{
+	Object.create = function(obj) \{
+		function F() \{\};
+		F.prototype = obj;
+		return new F();
+	\}
+\}]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>createPolyfill</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

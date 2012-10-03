@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+// ${1} Resource
+Route::get('${1}s', array('as' => '${1}s', 'uses' => '${1}s@index'));
+Route::get('${1}s/(:any)', array('as' => '${1}', 'uses' => '${1}s@show'));
+Route::get('${1}s/new', array('as' => 'new_${1}', 'uses' => '${1}s@new'));
+Route::get('${1}s/(:any)edit', array('as' => 'edit_${1}', 'uses' => '${1}s@edit'));
+Route::post('${1}s', '${1}s@create');
+Route::put('${1}s/(:any)', '${1}s@update');
+Route::delete('${1}s/(:any)', '${1}s@destroy');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>resource</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>
